@@ -1,0 +1,14 @@
+[Unit]
+Description=Minecraft
+After=network.target
+
+[Service]
+WorkingDirectory=/var/backup_minecraft
+Type=simple
+Restart=always
+User=backup_minecraft
+Group=backup_minecraft
+ExecStart=/var/backup_minecraft/backup.sh
+
+[Install]
+WantedBy=multi-user.target
