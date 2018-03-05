@@ -1,3 +1,3 @@
 {
-"run_list": [ "recipe[minecraft]", "recipe[os-hardening]"]
+"run_list": [ "role[minecraft]" ]
 }   
