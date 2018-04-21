@@ -17,3 +17,6 @@ To add the key
 
 Backups are stored here every 5 hours
 https://www.dropbox.com/sh/0sipgzt3snd5hfg/AADpT9_yINf4tkoXiY6FE94Ca?dl=0
+
+Dropbox upload was created by andreafabrizi
+https://github.com/andreafabrizi/Dropbox-Uploader
