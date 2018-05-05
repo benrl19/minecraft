@@ -27,6 +27,14 @@ cookbook_file "/var/backup_minecraft/backup.sh" do
     action :create
 end
 
+cookbook_file "/var/backup_minecraft/clean.py" do
+    source "clean.py"
+    owner 'backup_minecraft'
+    group 'backup_minecraft'
+    mode "0550"
+    action :create
+end
+
 cookbook_file "/lib/systemd/system/backup_minecraft.service" do
     source "backup_minecraftservice.txt"
     owner 'root'
