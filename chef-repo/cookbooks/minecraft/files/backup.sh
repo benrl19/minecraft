@@ -11,5 +11,6 @@ cp -r /var/minecraft/world /var/backup_minecraft/$DATE/
 /var/backup_minecraft/dropbox_uploader.sh upload /var/backup_minecraft/$DATE /
 rm -r /var/backup_minecraft/$DATE
 fi
-sleep 18000
+python3 /var/backup_minecraft/clean.py
+sleep 86400
 done
