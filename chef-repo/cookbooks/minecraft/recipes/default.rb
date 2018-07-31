@@ -43,8 +43,8 @@ cookbook_file "/var/minecraft/ops.txt" do
    action :create
 end
 
-remote_file  "/var/minecraft/minecraft_server.1.12.2.jar" do
-    source "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/minecraft_server.1.12.2.jar"
+remote_file  "/var/minecraft/minecraft_server.1.13.jar" do
+    source "https://launcher.mojang.com/mc/game/1.13/server/d0caafb8438ebd206f99930cfaecfa6c9a13dca0/server.jar"
     owner 'minecraft'
     group 'minecraft'
     mode '0775'
